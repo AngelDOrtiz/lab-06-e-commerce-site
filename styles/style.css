@@ -18,8 +18,11 @@ body {
     --gutter: 30px;
     --footer-height: 25px;
     
-    font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
+    font-family: 'MedievalSharp', cursive;
+    font-size: x-large;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+   
 }
 
 main {
@@ -28,6 +31,10 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: calc(var(--footer-height));
+    background-color: var(--color2);
+    background-image: url(https://previews.123rf.com/images/123sidhe/123sidhe1810/123sidhe181000098/110770658-abstract-background-with-cracked-stone.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 section {
@@ -45,25 +52,17 @@ section {
     border: solid 2px var(--color1);
 }
 
-header {
-    display: flex;
-    justify-content: flex-end;
-    background-color: var(--color3);
-    height: var(--header-height);
-    box-shadow: var(--shadow);
-}
-
-footer {
-    display: flex;
-    justify-content: flex-end;
-    background-color: var(--color3);
-    box-shadow: var(--shadow);
-}
 
 
-h2 {
-    font-size: 1.8rem;
+
+
+
+
+h1 {
+    font-size: 4rem;
     font-weight: bold;
+    background-color: maroon;
+    color: gold;
 }
 
 .gutter-right {
@@ -82,16 +81,7 @@ p {
     margin: var(--gutter);
 }
   
-footer {
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    height: var(--footer-height);
-    display: flex;
-    justify-content: flex-end;
-    background-color: var(--color3);
-    box-shadow: var(--shadow);
-}
+
   
   @keyframes pulse {
     20% {
@@ -111,3 +101,30 @@ footer {
     }
 
   }
+  
+.hidden {
+    display: none;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 15px;
+    margin: 20px;
+}
+
+.item-image {
+    height: 600px;
+    width: 300px;
+}
+
+.fixed{
+    position: static;
+}
