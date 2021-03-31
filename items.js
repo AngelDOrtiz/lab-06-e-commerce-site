@@ -1,5 +1,6 @@
 export const magicItem = [
     {
+        id: 1,
         name: 'Mithral Armor',
         type: 'Armor',
         rarity: 'Uncommon',
@@ -10,6 +11,7 @@ export const magicItem = [
         image: 'https://i.pinimg.com/originals/e3/4a/c4/e34ac4f1c0d929a9a71361ef5d267aab.jpg'
     },
     {
+        id: 2,
         name: 'Rod of Lordly Might',
         type: 'Rod',
         rarity: 'Legendary',
@@ -20,6 +22,7 @@ export const magicItem = [
         image: 'https://www.scabard.com/user/stolph/image/11303203_s.jpg'
     },
     {
+        id: 3,
         name: 'Ring of the Ram',
         type: 'Ring',
         rarity: 'Rare',
@@ -30,6 +33,7 @@ export const magicItem = [
         image: 'https://media-waterdeep.cursecdn.com/avatars/thumbnails/7/370/1000/1000/636284762552967774.jpeg'
     },
     {
+        id: 4,
         name: 'Oathbow',
         type: 'Weapon',
         rarity: 'Very Rare',
@@ -40,6 +44,7 @@ export const magicItem = [
         image: 'https://media-waterdeep.cursecdn.com/avatars/thumbnails/7/323/1000/1000/636284755900680632.jpeg'
     },
     {
+        id: 5,
         name: 'Staff of Flowers',
         type: 'Staff',
         rarity: 'Common',

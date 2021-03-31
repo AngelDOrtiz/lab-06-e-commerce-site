@@ -6,11 +6,7 @@ export function findById(anArray, anId) {
     }
 }
 
-export function calcItemTotal(quantity, price) {
-    const itemTotal = quantity * price;
-    
-    return itemTotal;
-} 
+
 
 
 export function presentItem(paramItem) {
@@ -64,4 +60,43 @@ export function presentItem(paramItem) {
     li.append(pName, pType, sAttunement, image, description, price, button);
 
     return li;
+}
+
+export function createTablerow(someCartItem, someItem) {
+    const tr = document.createElement('tr');
+    const tdName = document.createElement('td');
+    const tdQuantity = document.createElement('td');
+    const tdPrice = document.createElement('td');
+
+    tdName.textContent = someItem.name;
+    tdQuantity.textContent = someCartItem.quantity;
+    const total = someItem.price * someCartItem.quantity;
+
+    tdPrice.textContent = `${total} gold.`;
+
+    tr.append(tdName, tdQuantity, tdPrice);
+}
+
+export function createTotalRow(cartArray, itemArray) {
+    let sum = 0;
+
+    for (let cartItem of cartArray) {
+        
+        const matchingItem = findById(itemArray, cartItem.id);
+
+        const lineItem = matchingItem.price * cartItem.quantity;
+
+        sum = sum + lineItem;
+    }
+
+    const tr = document.createElement('tr');
+
+    const td1 = document.createElement('td');
+    const td2 = document.createElement('td');
+    const td3 = document.createElement('id');
+
+    td3.textContent = `${sum}`;
+
+    tr.append(td1, td2, td3);
+    return tr;
 }
