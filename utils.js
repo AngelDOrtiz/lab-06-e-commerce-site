@@ -1,3 +1,18 @@
+export function findById(anArray, anId) {
+    for (let item of anArray) {
+        if (item.id === anId) {
+            return item;
+        }
+    }
+}
+
+export function calcItemTotal(quantity, price) {
+    const itemTotal = quantity * price;
+    
+    return itemTotal;
+} 
+
+
 export function presentItem(paramItem) {
     const li = document.createElement('li');
     li.classList.add('item');
