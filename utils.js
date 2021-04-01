@@ -1,6 +1,6 @@
-export function findById(anArray, anId) {
+export function findById(anArray, id) {
     for (let item of anArray) {
-        if (item.id === anId) {
+        if (item.id === id) {
             return item;
         }
     }
@@ -75,6 +75,8 @@ export function createTablerow(someCartItem, someItem) {
     tdPrice.textContent = `${total} gold.`;
 
     tr.append(tdName, tdQuantity, tdPrice);
+
+    return tr;
 }
 
 export function createTotalRow(cartArray, itemArray) {

@@ -10,12 +10,12 @@ const table = document.querySelector('table');
 for (let cartItem of cart) {
     
     const matchingItem = findById(magicItem, cartItem.id);
-
+    /*console.log(matchingItem);*/
     const tr = createTablerow(cartItem, matchingItem);
-
+    console.log(tr);
     table.append(tr);
 
-    console.log ()
+    
 }
 
 const totalRow = createTotalRow(cart, magicItem);
