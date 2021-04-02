@@ -1,3 +1,6 @@
+import { magicItem } from './items.js';
+import { addItemToCart } from './local-storage-utils.js';
+
 export function findById(anArray, id) {
     for (let item of anArray) {
         if (item.id === id) {
@@ -44,8 +47,12 @@ export function presentItem(paramItem) {
     price.classList.add('price');
     price.textContent = `${paramItem.price} gold`;
 
+    
     const button = document.createElement('button');
     button.textContent = 'Purchase';
+    button.addEventListener('click', () => {
+        addItemToCart(paramItem.id);
+    });
 
     
 

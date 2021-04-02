@@ -141,3 +141,12 @@ ul {
 .fixed{
     position: static;
 }
+
+table {
+    width: 60%;
+    border: solid 1px black;
+}
+
+tr {
+    border: solid 1px black;
+}
